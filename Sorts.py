@@ -6,9 +6,9 @@
 def InsertionSort(A:list,P:int,R:int):
     for j in range (P+1,R):
         key=A[j]  #Elemento a Insertar
-        #
+
         i=j-1
-        while (i>=1 and A[i]>key):
+        while (i>=P and A[i]>key):
             A[i+1] = A[i]
             i = i-1
         A[i+1] = key
