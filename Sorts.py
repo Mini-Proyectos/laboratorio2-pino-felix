@@ -21,8 +21,8 @@ def Mergesort(arreglo:list, p:int , r:int ):
 		Mergesort(arreglo, q+1, r) #Se realiza mergesort desde el elemento q+1 haasta el ultimo elemento r
 		Merge(arreglo, p, q, r) #Intercala los elementos que se dividieron 
 	return(arreglo)
-#Funcion Merge
-def Merge(arreglo, p, q, r):
+
+def Merge(arreglo:list, p:int, q:int, r:int):
 	i,j=0,0 # Variables de incremento 
 	resultado=[] #Lista del arreglo final 
 	n = q-p+1   #Tamaño de arreglo[p...q]
@@ -42,3 +42,4 @@ def Merge(arreglo, p, q, r):
 		else:
 			arreglo[k]=R[j] #Remover primero de R
 			j=j+1
+    return arreglo
