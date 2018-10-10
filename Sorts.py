@@ -3,25 +3,15 @@
 # Descripcion: Implementacion de los algoritmos InsertionSort y MergeSort
 import sys 
 # Ordenamiento por inserción
-<<<<<<< HEAD
-def InsertionSort(arreglo:list,p:int,r:int):
-    for j in range (p+1,r):
-        key=arreglo[j]  #Elemento a Insertar
-        i=j-1
-        while (i>=1 and arreglo[i]>key):
-            arreglo[i+1] = arreglo[i]
-=======
 def InsertionSort(A:list,P:int,R:int):
     for j in range (P+1,R):
         key=A[j]  #Elemento a Insertar
-
         i=j-1
         while (i>=P and A[i]>key):
             A[i+1] = A[i]
->>>>>>> a8818ad715c8f2df98271e84a849dc1859407d28
             i = i-1
-        arreglo[i+1] = key
-    return(arreglo)
+        A[i+1] = key
+    return(A)
 
 #Ordenamiento por unión
 def Mergesort(arreglo:list, p:int , r:int ):
