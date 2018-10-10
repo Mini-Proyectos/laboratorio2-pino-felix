@@ -24,11 +24,13 @@ def Mergesort(arreglo:list, p:int , r:int ):
 
 def Merge(arreglo:list, p:int, q:int, r:int):
 	i,j=0,0 # Variables de incremento 
-	resultado=[] #Lista del arreglo final 
+	resultado=[] #Lista del arreglo final
+	L = []
+	R = [] 
 	n = q-p+1   #Tamaño de arreglo[p...q]
 	m = r-q   #Tamaño de arreglo[q+1...r]
-	L = arreglo[n]
-	R = arreglo[m]
+	L.append(arreglo[n])
+	R.append(arreglo[m])
 	for i  in range(0,len(L)):
 		L[i] = arreglo[p+i-1]
 	for i  in range(0,len(R)):
