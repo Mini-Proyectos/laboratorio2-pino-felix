@@ -18,7 +18,7 @@ global arreglo
 
 def MergeSort(arreglo:list, p:int , r:int ):
     global arreglo
-    
+
 	if (p < r):
 		q = (p+r)//2  #q es la mitad del arreglo 
 		MergeSort(arreglo, p, q) #Se realiza mergeSort desde el primer elemento p hasta la mitad del arreglo q
@@ -30,7 +30,6 @@ def Merge(arreglo:list, p:int, q:int, r:int):
 	global arreglo
     n = q-p+1   #Tamaño de arreglo[p...q]
 	m = r-q   #Tamaño de arreglo[q+1...r]
-
 	for i  in range(0,len(L)):
 		L.append(i)
         L[i] = arreglo[p+i-1]
