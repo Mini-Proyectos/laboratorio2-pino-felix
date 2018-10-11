@@ -38,7 +38,7 @@ def Merge(arreglo:list, p:int, q:int, r:int):
         R.append(i)
 		R[i] = arreglo[q+i]
 
-	L[n+1],R[m+1] = sys.maxint,sys,maxint #Sentinelas 
+	L[n+1],R[m+1] = sys.maxint,sys.maxint #Sentinelas 
 
 	for k in range(p,r):
 		if L[i]<=R[j]:
