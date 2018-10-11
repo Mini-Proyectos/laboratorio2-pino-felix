@@ -7,6 +7,7 @@ import time
 import sys
 import random
 from Sorts import InsertionSort
+from Sorts import MergeSort
 
 sys.argv #Recibimos directo de la consola la función y el numero delelementos que tendrá el arreglo
 
@@ -24,6 +25,7 @@ def ArregloRandom (Tamaño:int):
 TamañoMain=int(sys.argv[2])
 Algoritmo=str(sys.argv[1])
 
+#Creamos el arreglo de numeros a ser evaluado
 Arreglo=ArregloRandom(TamañoMain)
 
 #Ejecutamos el ordenamiento solicitado
